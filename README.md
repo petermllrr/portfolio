@@ -13,7 +13,7 @@ My portfolio on GitHub Pages
 
 Follow the [official Jekyll documentation](https://jekyllrb.com/docs/installation/macos/) for the installation.
 
-Be careful to read it first, so you install the bundler and Jekyll gems in your home directory instead of usr/local/bin. Before executing `gem install bundler jekyll` add the local gem directory to `.bash_profile` file. If you do not install gems in your home directory, your bash cannot find the jekyll executable.
+Be careful to read it first, so you install the bundler and Jekyll gems in your home directory instead of `usr/local/bin`. Before executing gem install bundler jekyll you should add a local gem directory to `.bash_profile` file. If you do not install gems in your home directory, your bash cannot find the jekyll executable.
 
 ```bash
 # Install gems in home directory
