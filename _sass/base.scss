@@ -1,0 +1,231 @@
+/* ==========================================================================
+   Settings
+   ========================================================================== */
+
+/*
+ * Breakpoints and Grid
+ * Breakpoints are identical to Bootstrap v4.3
+ * Source: https://getbootstrap.com/docs/4.3/layout/grid/
+ */
+
+$bp-small: 576px;
+$bp-medium: 768px;
+$bp-large: 992px;
+$bp-x-large: 1200px;
+
+$grid-padding-x-small: 20px;
+$grid-padding-small: 20px;
+$grid-padding-medium: 20px;
+$grid-padding-large: 50px;
+$grid-padding-x-large: 50px;
+
+$grid-max-width: 1200px;
+
+/*
+ * Text styles
+ */
+
+$text-mobile-base-size: 20px;
+$text-desktop-base-size: 24px;
+
+$text-mobile-font-scale: 1.25;
+$text-desktop-font-scale: 1.25;
+
+$text-bodycopy-line-height: 1.5;
+$text-heading-line-height: 1.1;
+$text-letter-spacing: 0.5px;
+
+/*
+ * Colors
+ */
+
+$color-accent: #1ec0f9;
+$color-black: #14181e;
+$color-white: #ffffff;
+
+/* ==========================================================================
+   Grid and layout
+   ========================================================================== */
+
+/*
+ * Responsive mixin
+ * Source: https://medium.com/developing-with-sass/creating-a-dead-simple-sass-mixin-to-handle-responsive-breakpoints-889927b37740
+ *
+ * Usage:
+ * @include breakpoint(small) { ... }
+ */
+
+@mixin breakpoint($class) {
+  @if $class == x-small {
+    @media (max-width: $bp-small) {
+      @content;
+    }
+  } @else if $class == small {
+    @media (min-width: $bp-small) {
+      @content;
+    }
+  } @else if $class == medium {
+    @media (min-width: $bp-medium) {
+      @content;
+    }
+  } @else if $class == large {
+    @media (min-width: $bp-large) {
+      @content;
+    }
+  } @else if $class == x-large {
+    @media (min-width: $bp-x-large) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint mixin supports: x-small, small, medium, large, x-large";
+  }
+}
+
+.grid-container {
+  box-sizing: border-box;
+  padding-left: $grid-padding-x-small;
+  padding-right: $grid-padding-x-small;
+  width: 100%;
+
+  @include breakpoint(small) {
+    padding-left: $grid-padding-small;
+    padding-right: $grid-padding-small;
+  }
+
+  @include breakpoint(medium) {
+    padding-left: $grid-padding-medium;
+    padding-right: $grid-padding-medium;
+  }
+
+  @include breakpoint(large) {
+    padding-left: $grid-padding-large;
+    padding-right: $grid-padding-large;
+  }
+
+  @include breakpoint(x-large) {
+    margin: 0 auto;
+    padding-left: $grid-padding-x-large;
+    padding-right: $grid-padding-x-large;
+    width: 1200px;
+  }
+}
+
+/* ==========================================================================
+   Text styles
+   ========================================================================== */
+
+/*
+ * Fonts
+ */
+
+@font-face {
+  font-family: "Europa";
+  src: url("/assets/fonts/europa-regular-webfont.woff2") format("woff2"),
+    url("europa-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Europa";
+  src: url("/assets/fonts/europa-bold-webfont.woff2") format("woff2"), url("europa-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/*
+ * Text styles
+ */
+
+h1,
+.text-heading-1 {
+  color: $color-black;
+  font-family: Europa;
+  font-size: $text-mobile-base-size * $text-mobile-font-scale * $text-mobile-font-scale * $text-mobile-font-scale;
+  letter-spacing: $text-letter-spacing;
+  line-height: $text-heading-line-height;
+
+  @include breakpoint(large) {
+    font-size: $text-desktop-base-size * $text-desktop-font-scale * $text-desktop-font-scale * $text-desktop-font-scale;
+  }
+}
+
+h2,
+.text-heading-2 {
+  color: $color-black;
+  font-family: Europa;
+  font-size: $text-mobile-base-size * $text-mobile-font-scale * $text-mobile-font-scale;
+  letter-spacing: $text-letter-spacing;
+  line-height: $text-heading-line-height;
+
+  @include breakpoint(large) {
+    font-size: $text-desktop-base-size * $text-desktop-font-scale * $text-desktop-font-scale;
+  }
+}
+
+h3,
+.text-heading-3 {
+  color: $color-black;
+  font-family: Europa;
+  font-size: $text-mobile-base-size * $text-mobile-font-scale;
+  letter-spacing: $text-letter-spacing;
+  line-height: $text-heading-line-height;
+
+  @include breakpoint(large) {
+    font-size: $text-desktop-base-size * $text-desktop-font-scale;
+  }
+}
+
+p,
+.text-body {
+  color: $color-black;
+  font-family: Europa;
+  font-size: $text-mobile-base-size;
+  letter-spacing: $text-letter-spacing;
+  line-height: $text-bodycopy-line-height;
+
+  @include breakpoint(large) {
+    font-size: $text-desktop-base-size;
+  }
+}
+
+small,
+.text-small {
+  color: $color-black;
+  display: inline-block;
+  font-family: Europa;
+  font-size: $text-mobile-base-size / $text-mobile-font-scale;
+  letter-spacing: $text-letter-spacing;
+  line-height: $text-bodycopy-line-height;
+
+  @include breakpoint(large) {
+    font-size: $text-desktop-base-size / $text-mobile-font-scale;
+  }
+}
+
+/*
+ * Links
+ */
+
+a {
+  box-shadow: 0 2px 0 $color-black;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    box-shadow: 0 2px 0 $color-accent;
+    color: $color-accent;
+  }
+}
+
+/*
+ * Text colors
+ */
+
+ .text--is-white, {
+   color: $color-white;
+
+   & a {
+    box-shadow: 0 2px 0 $color-accent;
+   }
+ }
