@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<section class="hero-introduction">
+    <div class="hero-introduction__grid-container grid-container">
+        <h1 class="hero-introduction__heading text--is-white">{{ page.hero.introduction.heading }}</h1>
+        <p class="hero-introduction__text text--is-white">{{ page.hero.introduction.text }}</p>
+        {%- if page.hero.links.size > 0 -%}
+        {% for link in page.hero.links %}
+            {%- capture url -%} {{link.url}} {%- endcapture -%}
+            {%- capture text -%} {{link.text}} {%- endcapture -%}
+            {%- capture icon -%} {{link.icon}} {%- endcapture -%}
+            {% include link-with-icon.html url=url text=text icon=icon theme="dark" %}
+        {% endfor %}
+        {%- endif -%}
+
+        <img class="hero-introduction__image"
+            srcset="{{ page.hero.image.x1 }} 1x,
+                    {{ page.hero.image.x2 }} 2x,
+                    {{ page.hero.image.x3 }} 3x"
+            src="{{ page.hero.image.x1 }}"
+            alt="{{ page.hero.image.description }}">
+    </div>
+</section>

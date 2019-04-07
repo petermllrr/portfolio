@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
-{%- include head.html -%}
+{% include head.html %}
 
 <body>
 
-    <div class="grid-container">
-        {{ content }}
-    </div>
+<main>
+    {{ content }}
+</main>
 
-    {%- if jekyll.environment == 'production' and site.google_analytics -%}
-    {%- include google-analytics.html -%}
-    {%- endif -%}
+{%- if jekyll.environment == 'production' and site.google_analytics -%}
+{% include google-analytics.html %}
+{%- endif -%}
 </body>
 
 </html>

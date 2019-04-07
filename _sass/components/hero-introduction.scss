@@ -1,0 +1,47 @@
+.hero-introduction {
+    background-color: $color-black;
+    overflow: hidden;
+}
+
+.hero-introduction__grid-container {
+    padding-top: $spacing-base * 20;
+    padding-bottom: $spacing-base * 10;
+    position: relative;
+
+    @include breakpoint(medium) {
+        padding-top: $spacing-base * 10;
+    }
+}
+
+.hero-introduction__heading,
+.hero-introduction__text {
+    position: relative;
+    z-index: 1;
+
+    @include breakpoint(medium) {
+        width: 60%;
+    }
+}
+
+.hero-introduction__image {
+    position: absolute;
+    right: -100px;
+    top: -150px;
+    transform: rotate(180deg) scale(-.5,.5);
+
+    @include breakpoint(small) {
+        right: -20px;
+        transform: rotate(180deg) scale(-.7,.7);
+    }
+
+    @include breakpoint(medium) {
+        right: 0px;
+        top: auto;
+        bottom: 0px;
+        transform: none;
+    }
+
+    @include breakpoint(x-large) {
+        right: 0px;
+    }
+}

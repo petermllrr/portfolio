@@ -43,6 +43,12 @@ $color-accent: #1ec0f9;
 $color-black: #14181e;
 $color-white: #ffffff;
 
+/*
+ * Spacing
+ */
+
+$spacing-base: 10px;
+
 /* ==========================================================================
    Grid and layout
    ========================================================================== */
@@ -121,14 +127,14 @@ $color-white: #ffffff;
 @font-face {
   font-family: "Europa";
   src: url("/assets/fonts/europa-regular-webfont.woff2") format("woff2"),
-    url("europa-regular-webfont.woff") format("woff");
+    url("/assets/fonts/europa-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Europa";
-  src: url("/assets/fonts/europa-bold-webfont.woff2") format("woff2"), url("europa-bold-webfont.woff") format("woff");
+  src: url("/assets/fonts/europa-bold-webfont.woff2") format("woff2"), url("/assets/fonts/europa-bold-webfont.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -137,6 +143,13 @@ $color-white: #ffffff;
  * Text styles
  */
 
+*,
+*::before,
+*::after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 h1,
 .text-heading-1 {
   color: $color-black;
@@ -144,6 +157,7 @@ h1,
   font-size: $text-mobile-base-size * $text-mobile-font-scale * $text-mobile-font-scale * $text-mobile-font-scale;
   letter-spacing: $text-letter-spacing;
   line-height: $text-heading-line-height;
+  margin-bottom: 0.4em;
 
   @include breakpoint(large) {
     font-size: $text-desktop-base-size * $text-desktop-font-scale * $text-desktop-font-scale * $text-desktop-font-scale;
@@ -183,6 +197,8 @@ p,
   font-size: $text-mobile-base-size;
   letter-spacing: $text-letter-spacing;
   line-height: $text-bodycopy-line-height;
+  margin-top: 0.4em;
+  margin-bottom: 1.2em;
 
   @include breakpoint(large) {
     font-size: $text-desktop-base-size;
@@ -207,7 +223,16 @@ small,
  * Links
  */
 
-a {
+p a,
+.text-body a,
+small a,
+.text-small a,
+h1 a,
+.text-heading-1 a,
+h2 a,
+.text-heading-2 a,
+h3 a,
+.text-heading-3 a {
   box-shadow: 0 2px 0 $color-black;
   color: inherit;
   text-decoration: none;
@@ -222,10 +247,9 @@ a {
  * Text colors
  */
 
- .text--is-white, {
-   color: $color-white;
-
-   & a {
+.text--is-white {
+  color: $color-white;
+  & a {
     box-shadow: 0 2px 0 $color-accent;
-   }
- }
+  }
+}
