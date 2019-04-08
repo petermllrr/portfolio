@@ -23,3 +23,9 @@ layout: default
             alt="{{ page.hero.image.description }}">
     </div>
 </section>
+<section class="grid-container">
+    {% for textblock in page.text %}
+    <h2 class="text-headine-2">{{ textblock.heading }}</h2>
+    <p class="text-body">{{ textblock.text }}</p>
+    {% endfor %}
+</section>

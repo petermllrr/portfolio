@@ -171,9 +171,13 @@ h2,
   font-size: $text-mobile-base-size * $text-mobile-font-scale * $text-mobile-font-scale;
   letter-spacing: $text-letter-spacing;
   line-height: $text-heading-line-height;
+  margin-top: $spacing-base * 8;
+  margin-bottom: $spacing-base * 1.5;
 
   @include breakpoint(large) {
     font-size: $text-desktop-base-size * $text-desktop-font-scale * $text-desktop-font-scale;
+    margin-top: $spacing-base * 12;
+    margin-bottom: $spacing-base * 2;
   }
 }
 
@@ -216,6 +220,21 @@ small,
 
   @include breakpoint(large) {
     font-size: $text-desktop-base-size / $text-mobile-font-scale;
+  }
+}
+
+p,
+.text-body,
+small,
+.text-small,
+h1,
+.text-heading-1,
+h2,
+.text-heading-2,
+h3,
+.text-heading-3 {
+  @include breakpoint(medium) {
+    width: 80%;
   }
 }
 
