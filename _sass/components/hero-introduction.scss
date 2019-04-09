@@ -13,7 +13,10 @@
     }
 }
 
-// Move text in front of image
+/*
+ * Text
+ */
+
 .hero-introduction__heading,
 .hero-introduction__text {
     position: relative;
@@ -34,18 +37,46 @@
     @include text-style(white);
 }
 
+/*
+ * Hero Links
+ */
+
 .hero-introduction__linkcontainer {
     display: flex;
     flex-direction: column;
 
     @include breakpoint(small) {
         flex-direction: row;
-        
-        & > .link-with-icon {
-            margin-right: $spacing-base * 4;
-        }
     }
 }
+
+.hero-introduction__link {
+    @include text-style(body);
+    @include text-style(white);
+
+    margin-top: 0;
+    margin-right: $spacing-base * 4;
+    margin-bottom: 0;
+}
+
+.hero-introduction__link-text {
+    box-shadow: 0 2px 0 $color-accent;
+}
+
+.hero-introduction__link:hover .hero-introduction__link-text {
+    color: $color-accent;
+}
+
+.hero-introduction__link-icon {
+    font-size: 1.8em;
+    margin-right: 0.2em;
+    position: relative;
+    top: .2em;
+}
+
+/*
+ * Image
+ */
 
 .hero-introduction__image {
     position: absolute;

@@ -6,15 +6,13 @@ layout: default
     <div class="hero-introduction__grid-container grid-container">
         <h1 class="hero-introduction__heading">{{ page.hero.introduction.heading }}</h1>
         <p class="hero-introduction__text">{{ page.hero.introduction.text }}</p>
+        
         <div class="hero-introduction__linkcontainer">
-            {%- if page.hero.links.size > 0 -%}
             {% for link in page.hero.links %}
-                {%- capture url -%} {{link.url}} {%- endcapture -%}
-                {%- capture text -%} {{link.text}} {%- endcapture -%}
-                {%- capture icon -%} {{link.icon}} {%- endcapture -%}
-                {% include link-with-icon.html url=url text=text icon=icon theme="dark" %}
+            <a class="hero-introduction__link" href="{{ link.url }}">
+                <i class="hero-introduction__link-icon {{link.icon}}"></i><span class="hero-introduction__link-text">{{ link.text }}</span>
+            </a>
             {% endfor %}
-            {%- endif -%}
         </div>
 
         <img class="hero-introduction__image"
