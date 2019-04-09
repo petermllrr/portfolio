@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'portfolio-icons';
-  src: url('/assets/fonts/portfolio-icons.eot?59951581');
-  src: url('/assets/fonts/portfolio-icons.eot?59951581#iefix') format('embedded-opentype'),
-       url('/assets/fonts/portfolio-icons.woff2?59951581') format('woff2'),
-       url('/assets/fonts/portfolio-icons.woff?59951581') format('woff'),
-       url('/assets/fonts/portfolio-icons.ttf?59951581') format('truetype'),
-       url('/assets/fonts/portfolio-icons.svg?59951581#portfolio-icons') format('svg');
+  src: url('/assets/fonts/portfolio-icons.eot?42865687');
+  src: url('/assets/fonts/portfolio-icons.eot?42865687#iefix') format('embedded-opentype'),
+       url('/assets/fonts/portfolio-icons.woff2?42865687') format('woff2'),
+       url('/assets/fonts/portfolio-icons.woff?42865687') format('woff'),
+       url('/assets/fonts/portfolio-icons.ttf?42865687') format('truetype'),
+       url('/assets/fonts/portfolio-icons.svg?42865687#portfolio-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'portfolio-icons';
-    src: url('../font/portfolio-icons.svg?59951581#portfolio-icons') format('svg');
+    src: url('../font/portfolio-icons.svg?42865687#portfolio-icons') format('svg');
   }
 }
 */
@@ -55,6 +55,9 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-cv:before { content: '\e807'; } /* '' */
-.icon-dribbble:before { content: '\e808'; } /* '' */
-.icon-mail:before { content: '\e809'; } /* '' */
+.icon-cv-inline:before { content: '\e800'; } /* '' */
+.icon-cv:before { content: '\e801'; } /* '' */
+.icon-dribbble:before { content: '\e802'; } /* '' */
+.icon-linkedin:before { content: '\e803'; } /* '' */
+.icon-mail-inline:before { content: '\e804'; } /* '' */
+.icon-mail:before { content: '\e805'; } /* '' */
