@@ -13,6 +13,7 @@
     }
 }
 
+// Move text in front of image
 .hero-introduction__heading,
 .hero-introduction__text {
     position: relative;
@@ -20,6 +21,29 @@
 
     @include breakpoint(medium) {
         width: 60%;
+    }
+}
+
+.hero-introduction__heading {
+    @include text-style(heading-1);
+    @include text-style(white);
+}
+
+.hero-introduction__text {
+    @include text-style(body);
+    @include text-style(white);
+}
+
+.hero-introduction__linkcontainer {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(small) {
+        flex-direction: row;
+        
+        & > .link-with-icon {
+            margin-right: $spacing-base * 4;
+        }
     }
 }
 

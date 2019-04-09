@@ -56,9 +56,7 @@ $spacing-base: 10px;
 /*
  * Responsive mixin
  * Source: https://medium.com/developing-with-sass/creating-a-dead-simple-sass-mixin-to-handle-responsive-breakpoints-889927b37740
- *
- * Usage:
- * @include breakpoint(small) { ... }
+ * Usage: @include breakpoint(small) { ... }
  */
 
 @mixin breakpoint($class) {
@@ -86,6 +84,10 @@ $spacing-base: 10px;
     @warn "Breakpoint mixin supports: x-small, small, medium, large, x-large";
   }
 }
+
+/*
+ * Grid container for keeping elements in the grid.
+ */
 
 .grid-container {
   box-sizing: border-box;
@@ -140,105 +142,96 @@ $spacing-base: 10px;
 }
 
 /*
- * Text styles
+ * Text style mixins
+ * Usage: @include text-style(heading-1);
  */
 
-h1,
-.text-heading-1 {
-  color: $color-black;
-  font-family: Europa;
-  font-size: $text-mobile-base-size * $text-mobile-font-scale * $text-mobile-font-scale * $text-mobile-font-scale;
-  letter-spacing: $text-letter-spacing;
-  line-height: $text-heading-line-height;
-  margin-bottom: 0.4em;
+@mixin text-style($style) {
+  @if $style == heading-1 {
+    color: $color-black;
+    font-family: Europa;
+    font-size: $text-mobile-base-size * $text-mobile-font-scale * $text-mobile-font-scale * $text-mobile-font-scale;
+    letter-spacing: $text-letter-spacing;
+    line-height: $text-heading-line-height;
+    margin-bottom: 0.4em;
 
-  @include breakpoint(large) {
+    @include breakpoint(large) {
     font-size: $text-desktop-base-size * $text-desktop-font-scale * $text-desktop-font-scale * $text-desktop-font-scale;
+    }
+  }
+  @else if $style == heading-2 {
+    color: $color-black;
+    font-family: Europa;
+    font-size: $text-mobile-base-size * $text-mobile-font-scale * $text-mobile-font-scale;
+    letter-spacing: $text-letter-spacing;
+    line-height: $text-heading-line-height;
+    margin-top: $spacing-base * 8;
+    margin-bottom: $spacing-base * 1.5;
+
+    @include breakpoint(large) {
+      font-size: $text-desktop-base-size * $text-desktop-font-scale * $text-desktop-font-scale;
+      margin-top: $spacing-base * 12;
+      margin-bottom: $spacing-base * 2;
+    }
+  }
+  @else if $style == heading-3 {
+    color: $color-black;
+    font-family: Europa;
+    font-size: $text-mobile-base-size * $text-mobile-font-scale;
+    letter-spacing: $text-letter-spacing;
+    line-height: $text-heading-line-height;
+
+    @include breakpoint(large) {
+      font-size: $text-desktop-base-size * $text-desktop-font-scale;
+    }
+  }
+  @else if $style == body {
+    color: $color-black;
+    font-family: Europa;
+    font-size: $text-mobile-base-size;
+    letter-spacing: $text-letter-spacing;
+    line-height: $text-bodycopy-line-height;
+    margin-top: 0.4em;
+    margin-bottom: 1.2em;
+
+    @include breakpoint(large) {
+      font-size: $text-desktop-base-size;
+    }
+  }
+  @else if $style == small {
+    color: $color-black;
+    font-family: Europa;
+    font-size: $text-mobile-base-size / $text-mobile-font-scale;
+    letter-spacing: $text-letter-spacing;
+    line-height: $text-bodycopy-line-height;
+  
+    @include breakpoint(large) {
+      font-size: $text-desktop-base-size / $text-mobile-font-scale;
+    }
+  }
+  @else if $style == white {
+    color: $color-white;
+    & a {
+      box-shadow: 0 2px 0 $color-accent;
+    }
+  }
+  @else if $style == bold {
+    font-weight: bold;
+  }
+  @else {
+    @warn "Text-style mixin supports: small, body, heading-3, heading-2, heading-1, white, bold.";
   }
 }
 
-h2,
-.text-heading-2 {
-  color: $color-black;
-  font-family: Europa;
-  font-size: $text-mobile-base-size * $text-mobile-font-scale * $text-mobile-font-scale;
-  letter-spacing: $text-letter-spacing;
-  line-height: $text-heading-line-height;
-  margin-top: $spacing-base * 8;
-  margin-bottom: $spacing-base * 1.5;
-
-  @include breakpoint(large) {
-    font-size: $text-desktop-base-size * $text-desktop-font-scale * $text-desktop-font-scale;
-    margin-top: $spacing-base * 12;
-    margin-bottom: $spacing-base * 2;
-  }
-}
-
-h3,
-.text-heading-3 {
-  color: $color-black;
-  font-family: Europa;
-  font-size: $text-mobile-base-size * $text-mobile-font-scale;
-  letter-spacing: $text-letter-spacing;
-  line-height: $text-heading-line-height;
-
-  @include breakpoint(large) {
-    font-size: $text-desktop-base-size * $text-desktop-font-scale;
-  }
-}
-
-p,
-.text-body {
-  color: $color-black;
-  font-family: Europa;
-  font-size: $text-mobile-base-size;
-  letter-spacing: $text-letter-spacing;
-  line-height: $text-bodycopy-line-height;
-  margin-top: 0.4em;
-  margin-bottom: 1.2em;
-
-  @include breakpoint(large) {
-    font-size: $text-desktop-base-size;
-  }
-}
-
-small,
-.text-small {
-  color: $color-black;
-  display: inline-block;
-  font-family: Europa;
-  font-size: $text-mobile-base-size / $text-mobile-font-scale;
-  letter-spacing: $text-letter-spacing;
-  line-height: $text-bodycopy-line-height;
-
-  @include breakpoint(large) {
-    font-size: $text-desktop-base-size / $text-mobile-font-scale;
-  }
-}
+/*
+ * Improve readability.
+ */
 
 *,
 *::before,
 *::after {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-/*
- * All inline, markdown-relevant styles run 80% width for legibility
- */
-
-p,
-small,
-h1,
-h2,
-h3, {
-  @include breakpoint(medium) {
-    width: 80%;
-  }
-}
-
-.text--is-bold {
-  font-weight: bold;
 }
 
 /*
@@ -249,16 +242,53 @@ a {
   text-decoration: none;
 }
 
+/*
+ * Inline and markdown text styles.
+ */
+
+h1 {
+  @include text-style(heading-1);
+}
+
+h2 {
+  @include text-style(heading-2);
+}
+
+h3 {
+  @include text-style(heading-3);
+}
+
+h4 {
+  @include text-style(body);
+  @include text-style(bold);
+}
+
+h5 {
+  @include text-style(body);
+  @include text-style(bold);
+}
+
+p {
+  @include text-style(body);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5, {
+  @include breakpoint(medium) {
+    width: 80%;
+  }
+}
+
 p a,
-.text-body a,
-small a,
-.text-small a,
 h1 a,
-.text-heading-1 a,
 h2 a,
-.text-heading-2 a,
 h3 a,
-.text-heading-3 a {
+h4 a,
+h5 a {
   box-shadow: 0 2px 0 $color-black;
   color: inherit;
   text-decoration: none;
@@ -266,16 +296,5 @@ h3 a,
   &:hover {
     box-shadow: 0 2px 0 $color-accent;
     color: $color-accent;
-  }
-}
-
-/*
- * Text colors
- */
-
-.text--is-white {
-  color: $color-white;
-  & a {
-    box-shadow: 0 2px 0 $color-accent;
   }
 }

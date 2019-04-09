@@ -1,3 +1,5 @@
 <div class="link-with-icon {% if include.theme == "dark" %}link-with-icon--is-dark{% endif %}">
-    <a href="{{ include.url }}" class="text-body"><i class="link-with-icon__icon {{include.icon}}"></i><span class="link-with-icon__text">{{ include.text }}</span></a>
+    <a href="{{ include.url }}">
+        <i class="link-with-icon__icon {{include.icon}}"></i><span class="link-with-icon__text">{{ include.text }}</span>
+    </a>
 </div>

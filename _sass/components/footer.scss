@@ -21,6 +21,8 @@ footer {
 }
 
 .footer__link {
+    @include text-style(small);
+    
     flex: $flex-item-height;
     width: 120px;
 
@@ -53,4 +55,9 @@ footer {
         height: auto;
         margin-top: auto;
     }
+}
+
+.footer__title {
+    @include text-style(small);
+    @include text-style(bold);
 }

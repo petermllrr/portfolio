@@ -1,3 +1,10 @@
+.link-with-icon {
+    @include text-style(body);
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .link-with-icon__icon {
     font-size: 1.8em;
     margin-right: 0.2em;

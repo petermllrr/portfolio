@@ -4,16 +4,18 @@ layout: default
 
 <section class="hero-introduction">
     <div class="hero-introduction__grid-container grid-container">
-        <h1 class="hero-introduction__heading text--is-white">{{ page.hero.introduction.heading }}</h1>
-        <p class="hero-introduction__text text--is-white">{{ page.hero.introduction.text }}</p>
-        {%- if page.hero.links.size > 0 -%}
-        {% for link in page.hero.links %}
-            {%- capture url -%} {{link.url}} {%- endcapture -%}
-            {%- capture text -%} {{link.text}} {%- endcapture -%}
-            {%- capture icon -%} {{link.icon}} {%- endcapture -%}
-            {% include link-with-icon.html url=url text=text icon=icon theme="dark" %}
-        {% endfor %}
-        {%- endif -%}
+        <h1 class="hero-introduction__heading">{{ page.hero.introduction.heading }}</h1>
+        <p class="hero-introduction__text">{{ page.hero.introduction.text }}</p>
+        <div class="hero-introduction__linkcontainer">
+            {%- if page.hero.links.size > 0 -%}
+            {% for link in page.hero.links %}
+                {%- capture url -%} {{link.url}} {%- endcapture -%}
+                {%- capture text -%} {{link.text}} {%- endcapture -%}
+                {%- capture icon -%} {{link.icon}} {%- endcapture -%}
+                {% include link-with-icon.html url=url text=text icon=icon theme="dark" %}
+            {% endfor %}
+            {%- endif -%}
+        </div>
 
         <img class="hero-introduction__image"
             srcset="{{ page.hero.image.x1 }} 1x,
@@ -25,7 +27,7 @@ layout: default
 </section>
 <section class="grid-container">
     {% for textblock in page.text %}
-    <h2 class="text-headine-2">{{ textblock.heading }}</h2>
-    <p class="text-body">{{ textblock.text }}</p>
+    <h2>{{ textblock.heading }}</h2>
+    <p>{{ textblock.text }}</p>
     {% endfor %}
 </section>
