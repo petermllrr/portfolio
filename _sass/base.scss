@@ -223,24 +223,31 @@ small,
   }
 }
 
+/*
+ * All inline, markdown-relevant styles run 80% width for legibility
+ */
+
 p,
-.text-body,
 small,
-.text-small,
 h1,
-.text-heading-1,
 h2,
-.text-heading-2,
-h3,
-.text-heading-3 {
+h3, {
   @include breakpoint(medium) {
     width: 80%;
   }
 }
 
+.text--is-bold {
+  font-weight: bold;
+}
+
 /*
  * Links
  */
+
+a {
+  text-decoration: none;
+}
 
 p a,
 .text-body a,

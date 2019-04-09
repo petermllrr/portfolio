@@ -33,14 +33,14 @@ text:
 footer:
     - text: Email
       url: mailto:hello@petermueller.io
-      icon: /assets/icons/mail.svg
+      icon: icon-mail-inline
     - text: Full CV
       url: \#
-      icon: /assets/icons/cv-small.svg
+      icon: icon-cv-inline
     - text: LinkedIn
       url: https://www.linkedin.com/in/peter-m%C3%BCller-51701086/
-      icon: /assets/icons/linkedin.svg
+      icon: icon-linkedin
     - text: Dribbble
       url: https://dribbble.com/petermueller
-      icon: /assets/icons/dribbble.svg
+      icon: icon-dribbble
 ---
