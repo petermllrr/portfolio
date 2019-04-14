@@ -38,6 +38,16 @@
     @include text-style(white);
 }
 
+.hero-introduction__text a {
+    box-shadow: 0 4px 0 -2px $color-accent-on-dark;
+    color: inherit;
+
+    &:hover {
+        box-shadow: 0 4px 0 -2px $color-accent-on-dark;
+        color: $color-accent-on-dark;
+      }
+}
+
 /*
  * Hero Links
  */
@@ -61,11 +71,11 @@
 }
 
 .hero-introduction__link-text {
-    box-shadow: 0 2px 0 $color-accent;
+    box-shadow: 0 4px 0 -2px $color-accent-on-dark;
 }
 
 .hero-introduction__link:hover .hero-introduction__link-text {
-    color: $color-accent;
+    color: $color-accent-on-dark;
 }
 
 .hero-introduction__link-icon {

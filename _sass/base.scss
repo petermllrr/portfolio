@@ -39,7 +39,8 @@ $text-letter-spacing: 0.5px;
  * Colors
  */
 
-$color-accent: #1ec0f9;
+$color-accent: #0000FF;
+$color-accent-on-dark: #1ec0f9;
 $color-black: #14181e;
 $color-white: #ffffff;
 
@@ -185,6 +186,18 @@ $spacing-base: 10px;
       font-size: $text-desktop-base-size * $text-desktop-font-scale;
     }
   }
+  @else if $style == heading-4 {
+    color: $color-black;
+    font-family: Europa;
+    font-size: $text-mobile-base-size;
+    letter-spacing: $text-letter-spacing;
+    line-height: $text-heading-line-height;
+    margin-bottom: 0;
+
+    @include breakpoint(large) {
+      font-size: $text-desktop-base-size;
+    }
+  }
   @else if $style == body {
     color: $color-black;
     font-family: Europa;
@@ -192,7 +205,7 @@ $spacing-base: 10px;
     letter-spacing: $text-letter-spacing;
     line-height: $text-bodycopy-line-height;
     margin-top: 0.4em;
-    margin-bottom: 1.2em;
+    margin-bottom: 1em;
 
     @include breakpoint(large) {
       font-size: $text-desktop-base-size;
@@ -209,6 +222,17 @@ $spacing-base: 10px;
       font-size: $text-desktop-base-size / $text-mobile-font-scale;
     }
   }
+  @else if $style == x-small {
+    color: $color-black;
+    font-family: Europa;
+    font-size: $text-mobile-base-size / $text-mobile-font-scale / $text-mobile-font-scale;
+    letter-spacing: $text-letter-spacing;
+    line-height: $text-bodycopy-line-height;
+  
+    @include breakpoint(large) {
+      font-size: $text-desktop-base-size / $text-mobile-font-scale / $text-mobile-font-scale;
+    }
+  }
   @else if $style == white {
     color: $color-white;
     & a {
@@ -217,6 +241,16 @@ $spacing-base: 10px;
   }
   @else if $style == bold {
     font-weight: bold;
+  }
+  @else if $style == link {
+    box-shadow: 0 4px 0 -2px $color-accent;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      box-shadow: 0 4px 0 -2px $color-accent;
+      color: $color-accent;
+    }
   }
   @else {
     @warn "Text-style mixin supports: small, body, heading-3, heading-2, heading-1, white, bold.";
@@ -272,29 +306,18 @@ p {
   @include text-style(body);
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5, {
-  @include breakpoint(medium) {
-    width: 80%;
-  }
-}
-
 p a,
 h1 a,
 h2 a,
 h3 a,
 h4 a,
 h5 a {
-  box-shadow: 0 2px 0 $color-black;
-  color: inherit;
+  box-shadow: 0 4px 0 -2px $color-accent;
+  color: $color-accent;
   text-decoration: none;
 
   &:hover {
-    box-shadow: 0 2px 0 $color-accent;
+    box-shadow: 0 4px 0 -2px $color-accent;
     color: $color-accent;
   }
 }
