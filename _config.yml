@@ -29,6 +29,21 @@ markdown: kramdown
 plugins:
   - jekyll-seo-tag
 
+# Footer
+footer:
+    - text: Email
+      url: mailto:hello@petermueller.io
+      icon: icon-mail-inline
+    - text: Full CV
+      url: \#
+      icon: icon-cv-inline
+    - text: LinkedIn
+      url: https://www.linkedin.com/in/peter-m%C3%BCller-51701086/
+      icon: icon-linkedin
+    - text: Dribbble
+      url: https://dribbble.com/petermueller
+      icon: icon-dribbble
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -40,3 +55,4 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+---

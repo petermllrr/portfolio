@@ -28,19 +28,4 @@ text:
     - heading: Clients
       text: >-
         For more than seven years I have been working for a wide range of clients from the automotive, energy and retail sector. Examples include Daimler, Mercedes-Benz, EnBW, Bosch, VW, Wüstenrot, and IQOS.
-
-# Footer
-footer:
-    - text: Email
-      url: mailto:hello@petermueller.io
-      icon: icon-mail-inline
-    - text: Full CV
-      url: \#
-      icon: icon-cv-inline
-    - text: LinkedIn
-      url: https://www.linkedin.com/in/peter-m%C3%BCller-51701086/
-      icon: icon-linkedin
-    - text: Dribbble
-      url: https://dribbble.com/petermueller
-      icon: icon-dribbble
 ---
