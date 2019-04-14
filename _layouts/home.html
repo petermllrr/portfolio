@@ -1,5 +1,10 @@
 ---
 layout: default
+
+custom-javascript:
+    - /assets/js/imagesloaded.pkgd.min.js
+    - /assets/js/masonry.pkgd.min.js
+    - /assets/js/project-grid.js
 ---
 
 <section class="hero-introduction">
@@ -23,9 +28,26 @@ layout: default
             alt="{{ page.hero.image.description }}">
     </div>
 </section>
+
 <section class="grid-container">
     {% for textblock in page.text %}
     <h2>{{ textblock.heading }}</h2>
     <p>{{ textblock.text }}</p>
     {% endfor %}
+</section>
+
+<section class="project-grid grid-container">
+    <h2>My Work</h2>
+    <div class="project-grid__teaserlist">
+        {% for project in site.posts %}
+        <div class="project-grid__teaser">
+            <a href="{{ project.url }}"><img src="{{ project.cover-image.url }}" alt="{{ project.cover-image.description }}" class="project-grid__image"></a>
+            <h3 class="project-grid__title">{{ project.title }}</h3>
+            <p class="project-grid__description">{{ project.description }}</p>
+            <p class="project-grid__date">{{ project.date | date: "%Y" }}</p>
+            <a href="{{ project.url }}" class="project-grid__link">View project</a>
+        </div>
+        {% endfor %}
+        <div class="project-grid__gutter-sizer"></div>
+    </div>  
 </section>

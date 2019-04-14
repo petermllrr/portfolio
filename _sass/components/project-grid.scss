@@ -1,0 +1,102 @@
+.project-grid__teaserlist {
+    padding-top: $spacing-base * 3;
+}
+
+.project-grid__teaser {
+    display: block;
+    margin-bottom: $spacing-base * 5;
+    position: relative;
+
+    @include breakpoint(large) {
+        margin-bottom: $spacing-base * 10;
+    }
+}
+
+.project-grid__date {
+    right: 0;
+    position: absolute;
+    top: -2.4em;
+
+    @include text-style(x-small);
+
+    @include breakpoint(large) {
+        right: -2.2em;
+        top: 0;
+        transform: rotate(90deg);
+    }
+}
+
+.project-grid__image {
+    box-shadow: 0px 0px 0px 0px $color-black;
+    transition: .1s ease;
+    width: 100%;
+
+    &:hover {
+        box-shadow: -7px 7px 0px 0px $color-black;
+        transform: translate(7px, -7px);
+        // opacity: 0.8;
+    }
+}
+
+.project-grid__title {
+    @include text-style(heading-4);
+    margin-top: $spacing-base * 2.5;
+}
+
+.project-grid__description {
+    margin-top: 0.3em;
+    margin-bottom: 0;
+}
+
+.project-grid__link {  
+    @include text-style(body);
+    @include text-style(link);
+    display: inline-block;
+    margin-top: $spacing-base * 1.5;
+}
+
+/*
+ * No JS layout styles
+ */
+
+.project-grid__teaserlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-grid__teaser {
+    display: block;
+}
+
+@include breakpoint(small) {
+    .project-grid__teaser {
+        flex: 0 0 47.25%;
+    }
+}
+
+@include breakpoint(large) {
+    .project-grid__teaser {
+        flex: 0 0 45.55%;
+    }
+}
+
+/*
+ * JS-Masonry sizes
+ * The .project-grid__gutter-sizer element is used by the Masonry javascript
+ * to define responsive gutter sizes. It is set to "display: none" by default
+ * and will be turned visible again by the script.
+ */
+
+.project-grid__gutter-sizer { width: 0; display: none} 
+
+@include breakpoint(small) {
+    .project-grid__teaser { width: 47.25%; }
+    .project-grid__gutter-sizer { width: 5.5%; } 
+}
+
+@include breakpoint(large) {
+    .project-grid__teaser { width: 45.55%; }
+    .project-grid__gutter-sizer { width: 8.9%; } 
+}
+
