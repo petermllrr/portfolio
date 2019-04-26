@@ -39,22 +39,16 @@ Serve your site on your local network
 bundle exec jekyll serve --drafts --host=0.0.0.0;5B
 ```
 
-<<<<<<< Updated upstream
-=======
 If you set a baseurl, serve your site locally without `baseurl` messing up your links.
 ```bash
 bundle exec jekyll serve --drafts --baseurl ''
 ```
 
-<<<<<<< Updated upstream
 Serve your site with drafts visible
 ```bash
 bundle exec jekyll serve --drafts
 ```
 
-=======
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 Update your gems often, to receive the latest GitHub Pages gem.
 ```bash
 bundle update
