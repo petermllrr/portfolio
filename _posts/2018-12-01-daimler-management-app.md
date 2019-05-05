@@ -1,8 +1,8 @@
 ---
 layout: project
-permalink: daimler-manager-app
+permalink: daimler-management-app
 
-title: Daimler Manager App
+title: Daimler Management App
 description: Interface design, design lead, icon design
 cover-image:
     url: https://source.unsplash.com/collection/1368747/986x814
