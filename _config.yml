@@ -23,6 +23,8 @@ url: "https://www.petermueller.io" # the base hostname & protocol for your site,
 twitter_username: petermllrr
 github_username:  petermllrr
 
+google_analytics: UA-50093473-5
+
 # Build settings
 markdown: kramdown
 
