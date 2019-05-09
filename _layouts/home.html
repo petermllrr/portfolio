@@ -41,11 +41,14 @@ custom-javascript:
     <div class="project-grid__teaserlist">
         {% for project in site.posts %}
         <div class="project-grid__teaser">
-            <a href="{{ project.url }}"><img src="{{ project.cover-image.x2 }}" alt="{{ project.cover-image.description }}" class="project-grid__image"></a>
-            <h3 class="project-grid__title">{{ project.title }}</h3>
+            <a href="{{ project.url }}">
+                <div class="project-grid__image-zoom-container">
+                    <img src="{{ project.cover-image.x2 }}" alt="{{ project.cover-image.description }}" class="project-grid__image">
+                </div>
+            </a>
+            <h3 class="project-grid__title"><a href="{{ project.url }}">{{ project.title }}</a></h3>
             <p class="project-grid__description">{{ project.description }}</p>
             <p class="project-grid__date">{{ project.date | date: "%Y" }}</p>
-            <a href="{{ project.url }}" class="project-grid__link">View project</a>
         </div>
         {% endfor %}
         <div class="project-grid__gutter-sizer"></div>
