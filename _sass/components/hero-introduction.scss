@@ -4,6 +4,7 @@
 }
 
 .hero-introduction__grid-container {
+    @include grid-container;
     padding-top: $spacing-base * 20;
     padding-bottom: $spacing-base * 10;
     position: relative;

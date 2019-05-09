@@ -1,3 +1,6 @@
+.project-grid {
+    @include grid-container;
+}
 .project-grid__teaserlist {
     padding-top: $spacing-base * 3;
 }

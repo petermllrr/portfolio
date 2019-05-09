@@ -8,7 +8,7 @@ custom-javascript:
 ---
 
 <section class="hero-introduction">
-    <div class="hero-introduction__grid-container grid-container">
+    <div class="hero-introduction__grid-container">
         <h1 class="hero-introduction__heading">{{ page.hero.introduction.heading }}</h1>
         <p class="hero-introduction__text">{{ page.hero.introduction.text }}</p>
         
@@ -29,14 +29,14 @@ custom-javascript:
     </div>
 </section>
 
-<section class="grid-container">
+<section class="home__textblocks">
     {% for textblock in page.text %}
     <h2>{{ textblock.heading }}</h2>
     <p>{{ textblock.text }}</p>
     {% endfor %}
 </section>
 
-<section class="project-grid grid-container">
+<section class="project-grid">
     <h2>My Work</h2>
     <div class="project-grid__teaserlist">
         {% for project in site.posts %}

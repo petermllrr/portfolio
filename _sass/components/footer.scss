@@ -1,6 +1,7 @@
 $flex-item-height: 2em;
 
 footer {
+    @include grid-container;
     margin-top: $spacing-base * 12;
     padding-top: $spacing-base * 3;
     padding-bottom: $spacing-base * 3;
