@@ -5,6 +5,7 @@ permalink: bosch-powertools
 title: Bosch PowerTools
 description: Interface design, prototyping
 cover-image:
-    url: https://source.unsplash.com/collection/1368747/986x1498
-    description: A nice cover image for my project.
+    x1: /assets/images/bosch-powertools/bosch-power-tools-cover@1x.jpg
+    x2: /assets/images/bosch-powertools/bosch-power-tools-cover@2x.jpg
+    description: Screenshot of Bosch PowerTools website
 ---

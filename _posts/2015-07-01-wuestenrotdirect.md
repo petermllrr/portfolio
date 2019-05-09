@@ -1,10 +1,11 @@
 ---
 layout: project
-permalink: wuestenrot-direct
+permalink: wuestenrot-und-wuerttembergische
 
-title: wüstenrot direct
+title: Wüstenrot and Württembergische
 description: Interface design, prototying, design system
 cover-image:
-    url: https://source.unsplash.com/collection/1368747/986x1498
-    description: A nice cover image for my project.
+    x1: /assets/images/wuestenrot-und-wuerttembergische/wuestenrot-und-wuerttembergische-cover@1x.jpg
+    x2: /assets/images/wuestenrot-und-wuerttembergische/wuestenrot-und-wuerttembergische-cover@2x.jpg
+    description: Screenshot of Württembergische website
 ---
