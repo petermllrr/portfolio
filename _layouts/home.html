@@ -47,7 +47,7 @@ custom-javascript:
                 </div>
             </a>
             <h3 class="project-grid__title"><a href="{{ project.url }}">{{ project.title }}</a></h3>
-            <p class="project-grid__description">{{ project.description }}</p>
+            <p class="project-grid__description">{{ project.homepage-description }}</p>
             <p class="project-grid__date">{{ project.date | date: "%Y" }}</p>
         </div>
         {% endfor %}

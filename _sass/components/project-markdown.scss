@@ -1,0 +1,12 @@
+.project-markdown {
+    @include grid-container;
+    margin-top: $spacing-base * 6;
+
+    @include breakpoint(medium) {
+        margin-top: $spacing-base * 10;
+    }
+}
+
+.project-markdown img {
+    width: 100%;
+}
