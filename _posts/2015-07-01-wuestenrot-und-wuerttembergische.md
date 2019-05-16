@@ -1,8 +1,8 @@
 ---
 layout: project
+categories: projects
 
 title: Wüstenrot and Württembergische
-permalink: wuestenrot-und-wuerttembergische
 
 # Homepage teaser
 cover-image:

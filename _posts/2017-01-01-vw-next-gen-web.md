@@ -1,8 +1,8 @@
 ---
 layout: project
+categories: projects
 
 title: VW Next Generation Website
-permalink: vw-next-gen-web
 
 # Homepage teaser
 cover-image:

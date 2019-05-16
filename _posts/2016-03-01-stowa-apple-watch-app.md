@@ -1,8 +1,8 @@
 ---
 layout: project
+categories: projects
 
 title: STOWA Apple Watch App
-permalink: stowa-apple-watch-app
 
 # Homepage teaser
 cover-image:
