@@ -2,7 +2,7 @@
 layout: project
 
 title: Daimler Management App
-permalink: daimler-management-app
+permalink: /projects/daimler-management-app
 
 # Homepage teaser
 cover-image:
