@@ -16,3 +16,5 @@ subheader:
 role: Interface design, prototyping
 client: Bosch
 ---
+
+{% include video-loop.html url="/assets/videos/bosch-powertools/bosch-powertools-landingpage-animation.mp4" %}

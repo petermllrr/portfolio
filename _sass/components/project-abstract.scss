@@ -6,11 +6,8 @@
     @include text-style(heading-1);
     margin-top: $spacing-base * 5;
 
-    @include breakpoint(medium) {
-        margin-top: $spacing-base * 8;
-    }
-
     @include breakpoint(large) {
+        margin-top: $spacing-base * 8;
         font-size: $text-desktop-base-size * $text-desktop-font-scale * $text-desktop-font-scale * $text-desktop-font-scale * $text-desktop-font-scale;
     }
 }
@@ -27,7 +24,7 @@
     @include text-style(body);
     margin-top: $spacing-base * 5;
 
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
         margin-top: $spacing-base * 8;
     }
 }

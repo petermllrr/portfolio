@@ -112,42 +112,13 @@ $spacing-base: 10px;
   }
 
   @include breakpoint(x-large) {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: $grid-padding-x-large;
     padding-right: $grid-padding-x-large;
     width: 1200px;
   }
  }
- 
-/* 
-.grid-container {
-  box-sizing: border-box;
-  padding-left: $grid-padding-x-small;
-  padding-right: $grid-padding-x-small;
-  width: 100%;
-
-  @include breakpoint(small) {
-    padding-left: $grid-padding-small;
-    padding-right: $grid-padding-small;
-  }
-
-  @include breakpoint(medium) {
-    padding-left: $grid-padding-medium;
-    padding-right: $grid-padding-medium;
-  }
-
-  @include breakpoint(large) {
-    padding-left: $grid-padding-large;
-    padding-right: $grid-padding-large;
-  }
-
-  @include breakpoint(x-large) {
-    margin: 0 auto;
-    padding-left: $grid-padding-x-large;
-    padding-right: $grid-padding-x-large;
-    width: 1200px;
-  }
-} */
 
 /* ==========================================================================
    Text styles

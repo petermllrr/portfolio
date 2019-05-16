@@ -17,6 +17,8 @@ role: Design lead, prototyping, UI design, icon design
 client: Daimler
 ---
 
-![Three screenshots of the Daimler Management App](/assets/images/daimler-management-app/daimler_management_app_intro.png)
+{% include video-loop.html url="/assets/videos/daimler-management-app/daimler_management_app_animation.mp4" %}
 
 This app is part of an internal initiative at Daimler to make the lives of their managers easier and more efficient. It gives managers direct access to relevant data of their departments and aggregates to-dos and notifications from multiple system into one simple dashboard.
+
+![Three screenshots of the Daimler Management App](/assets/images/daimler-management-app/daimler_management_app_intro.png)
