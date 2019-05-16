@@ -1,8 +1,8 @@
 ---
 layout: project
+categories: projects
 
 title: hessnatur Fashionweek
-permalink: hessnatur
 
 # Homepage teaser
 cover-image:

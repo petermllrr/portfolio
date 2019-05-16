@@ -1,8 +1,8 @@
 ---
 layout: project
+categories: projects
 
 title: EnBW Relaunch
-permalink: enbw-relaunch
 
 # Homepage teaser
 cover-image:

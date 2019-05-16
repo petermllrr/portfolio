@@ -1,8 +1,8 @@
 ---
 layout: project
+categories: projects
 
 title: Bosch PowerTools
-permalink: bosch-powertools
 
 # Homepage teaser
 cover-image:

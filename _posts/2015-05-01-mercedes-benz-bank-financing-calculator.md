@@ -1,8 +1,8 @@
 ---
 layout: project
+categories: projects
 
 title: Mercedes-Benz Financing Calculator
-permalink: mercedes-benz-bank-financing-calculator
 
 # Homepage teaser
 cover-image:
