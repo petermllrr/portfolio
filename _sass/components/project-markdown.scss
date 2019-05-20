@@ -1,10 +1,10 @@
 .project-markdown {
     @include grid-container;
 
-    margin-top: $spacing-base * 5;
+    margin-top: $spacing-base * 4;
     
     @include breakpoint(large) {
-        margin-top: $spacing-base * 10;
+        margin-top: $spacing-base * 6;
     }
 }
 
@@ -12,10 +12,26 @@
     width: 100%;
 }
 
-.project-markdown p {
-    margin-top: $spacing-base * 6;
+.project-markdown p + p {
+    margin-top: $spacing-base * 4;
 
     @include breakpoint (large) {
-        margin-top: $spacing-base * 12;
+        margin-top: $spacing-base * 6;
+    }
+}
+
+.project-markdown h2 + p {
+    margin-top: $spacing-base * 3;
+
+    @include breakpoint (large) {
+        margin-top: $spacing-base * 5;
+    }
+}
+
+.project-markdown video + p {
+    margin-top: $spacing-base * 4;
+
+    @include breakpoint (large) {
+        margin-top: $spacing-base * 6;
     }
 }

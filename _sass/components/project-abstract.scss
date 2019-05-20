@@ -14,18 +14,23 @@
 
 .project-abstract__text {
     @include text-style(body);
+    margin-top: $spacing-base * 3;
 
     @include breakpoint(medium) {
         width: 80%;
+    }
+
+    @include breakpoint(large) {
+        margin-top: $spacing-base * 4;
     }
 }
 
 .project-abstract__infos {
     @include text-style(body);
-    margin-top: $spacing-base * 5;
+    margin-top: $spacing-base * 3;
 
     @include breakpoint(large) {
-        margin-top: $spacing-base * 8;
+        margin-top: $spacing-base * 5;
     }
 }
 
