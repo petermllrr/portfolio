@@ -16,3 +16,11 @@ subheader:
 role: 
 client: 
 ---
+
+<!-- Available components in markdown -->
+
+<!-- Image -->
+{% include project-markdown-image.html source="" description ="" %}
+
+<!-- Video -->
+{% include project-markdown-video.html url="" %}

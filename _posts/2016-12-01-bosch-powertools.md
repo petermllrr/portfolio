@@ -17,4 +17,4 @@ role: Interface design, prototyping
 client: Bosch
 ---
 
-{% include video-loop.html url="/assets/videos/bosch-powertools/bosch-powertools-landingpage-animation.mp4" %}
+{% include project-markdown-video.html url="/assets/videos/bosch-powertools/bosch-powertools-landingpage-animation.mp4" %}

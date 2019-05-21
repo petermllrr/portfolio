@@ -17,47 +17,37 @@ role: Design lead, prototyping, UI design, icon design
 client: Daimler
 ---
 
-{% include video-loop.html url="/assets/videos/daimler-management-app/daimler_management_app_animation.mp4" %}
-
+{% include project-markdown-video.html url="/assets/videos/daimler-management-app/daimler_management_app_animation.mp4" %}
 
 Initial Workshop
 ----------------
 
-The project was kicked-off with a full day workshop for the product owners from Daimler and the complete design team. The POs and the designers wanted to understand the full scope of requirements and user needs. The workshop helped the team as well to understand dependencies and technical limitations of the internal technical IT landscape at Daimler. We finished with an agreed sprint plan, a rough first sitemap and a set of user stories we based our work on.
+The project was kicked-off with a full day workshop for the product owners and the complete design team. The POs and the designers wanted to understand the full scope of requirements and user needs. The workshop helped the team as well to understand dependencies and technical limitations of the internal technical IT landscape. We finished with an agreed sprint plan, a rough first sitemap and a set of user stories we based our work on.
 
-![Impressions of the initial requirements workshop.](/assets/images/daimler-management-app/daimler-management-app-workshop.jpg)
+{% include project-markdown-image.html source="/assets/images/daimler-management-app/daimler-management-app-workshop.jpg" description="Impressions of the initial requirements workshop." %}
 
-![Our initial sitemap excercise during the workshop.](/assets/images/daimler-management-app/daimler-management-app-workshop-sitemap.jpg)
+{% include project-markdown-image.html source="/assets/images/daimler-management-app/daimler-management-app-workshop-sitemap.jpg" description="Our initial sitemap excercise during the workshop." %}
 
-App Concept
+Concept
+-------
+
+The Management App is a data and microservice aggregator. It helps executives to access relevant data about her or his department faster by connecting to multiple internal systems and retrieving data automatically. Information is always up-to-date and each user only sees information relevant for her or his department. The first iteration of the app focuses on employee and hiring data.
+
+Apart from data aggregation, the Management App also includes useful microservices like editing the user's company profile, receiving urgent system notifications and displaying an overview of the user's tasks.
+
+{% include project-markdown-image.html source="/assets/images/daimler-management-app/daimler-management-app-concept.png" description="The concept of the Management App is data aggregation." %}
+
+Screenshots
 -----------
 
-// Sketch of app concept
+{% include project-markdown-video.html url="/assets/videos/daimler-management-app/daimler_management_app_onboarding.mp4" %}
 
-Onboarding
-----------
+{% include project-markdown-image.html source="/assets/images/daimler-management-app/daimler_management_app_intro.png" description="Three screenshots of the Daimler Management App." %}
 
-// Video of onboarding
+{% include project-markdown-image.html source="/assets/images/daimler-management-app/daimler-management-app-dashboard.png" description="Dashboard with drag and drop functionality." %}
 
-Employee and Department Data
------------------------------
+{% include project-markdown-image.html source="/assets/images/daimler-management-app/daimler-management-app-agile-o-meter-1.png" description="Agile-o-meter questionaire integrated in the app." %}
 
-// Images of Personalsituation and HV Data
+{% include project-markdown-image.html source="/assets/images/daimler-management-app/daimler-management-app-agile-o-meter-2.png" description="Agile-o-meter results screen." %}
 
-Agile-O-Meter
--------------
-
-// Images of Agile-O-Meter and HV Data
-
-Dashboard
----------
-
-// Images of Dashboard
-
-Icons and Artwork
------------------
-
-// Images Iconset
-
-
-![Three screenshots of the Daimler Management App](/assets/images/daimler-management-app/daimler_management_app_intro.png)
+{% include project-markdown-image.html source="/assets/images/daimler-management-app/daimler-management-app-profile-pic.png" description="Settings and company data screen." %}
