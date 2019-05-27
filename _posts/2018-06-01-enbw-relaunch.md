@@ -65,23 +65,16 @@ We developed a teaser mechanism and a conversion module, which we first built an
 
 {% include project-markdown-video.html url="/assets/videos/enbw/enbw-startpage-teaserwechsel-desktop.mp4" %}
 
-Product configurator
---------------------
-
-The new products that EnBW will offer as part of electromobility require a complex configurator. The customer can assemble the product individually from a large number of variants and additional modules.
-
-We have developed a flexible configurator that can be applied to all possible products and guides the user step by step through the process.
-
-// Screenshots of product configuator
-
 Infographics
 ------------
 
 An interesting side project for me were infographics, which were needed for the website as well as for other divisions of the company. We developed two illustration styles for EnBW: a stylized, realistic representation of product systems and a simple, easy-to-use isometric visual language.
 
-// Images of Energiewelt Infographics
+{% include project-markdown-video.html url="/assets/videos/enbw/enbw-energiewelt-timelapse.mp4" %}
 
-// Images of Digitaler Kern illustrations
+{% include project-markdown-image.html source="/assets/images/enbw-relaunch/enbw-relaunch-infographic-emob.png" description ="Electromobility infographic for EnBW." %}
+
+{% include project-markdown-image.html source="/assets/images/enbw-relaunch/enbw-relaunch-infographic-digitaler-kern.png" description ="Infographic process for EnBW Digitaler Kern." %}
 
 Design System
 -------------
@@ -90,9 +83,7 @@ A relaunch of this size can only work with a solid design system. Frontify was u
 
 Each developed component can be used on any page and can be combined flexibly.
 
-// Images of modules and components of the design system
-
-// Image of Styleguide
+{% include project-markdown-image.html source="/assets/images/enbw-relaunch/enbw-relaunch-design-system.png" description ="Styleguide example." %}
 
 Impressions
 -----------
@@ -101,4 +92,8 @@ This project is probably the project where I learned the most about Scrum and di
 
 I have been working in EnBW's offices for over a year and a half, we had an incredibly good time and I hope that EnBW will succeed with its transformation.
 
-// Fun team photos, scrum impressions
+{% include project-markdown-image.html source="/assets/images/enbw-relaunch/enbw-relaunch-impressions-1.jpg" description ="Travel impressions." %}
+
+{% include project-markdown-image.html source="/assets/images/enbw-relaunch/enbw-relaunch-impressions-2.jpg" description ="The cool Yello office lounge." %}
+
+{% include project-markdown-image.html source="/assets/images/enbw-relaunch/enbw-relaunch-impressions-3.jpg" description ="Fun impressions from the EnBW project." %}
