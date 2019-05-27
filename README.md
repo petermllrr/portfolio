@@ -29,24 +29,20 @@ Note: If you run `bundler update` for the first time you might run into an error
 Interested in setting up a new GitHub Pages Jekyll project? Head over to my Notion documentation [How to use Jekyll with GitHub Pages](https://www.notion.so/petermueller/How-to-use-Jekyll-with-GitHub-Pages-941c5d694181407eb67476dd3feb20fb)
 
 ## Useful Jekyll commands
-Serve your site locally with drafts enabled
+
+Serve your site locally
 ```bash
-bundle exec jekyll serve --drafts
+bundle exec jekyll serve
 ```
 
 Serve your site on your local network
 ```bash
-bundle exec jekyll serve --drafts --host=0.0.0.0;5B
+bundle exec jekyll serve --host=0.0.0.0;5B
 ```
 
 If you set a baseurl, serve your site locally without `baseurl` messing up your links.
 ```bash
-bundle exec jekyll serve --drafts --baseurl ''
-```
-
-Serve your site with drafts visible
-```bash
-bundle exec jekyll serve --drafts
+bundle exec jekyll serve --baseurl ''
 ```
 
 Update your gems often, to receive the latest GitHub Pages gem.
