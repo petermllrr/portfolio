@@ -25,7 +25,7 @@ github_username:  petermllrr
 
 google_analytics: UA-50093473-5
 
-permalink: /:categories/:title/
+permalink: /:title/
 
 # Build settings
 markdown: kramdown
