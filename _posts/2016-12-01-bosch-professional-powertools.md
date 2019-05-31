@@ -22,9 +22,15 @@ client: Bosch
 
 {% include project-markdown-image.html source="/assets/images/bosch-professional-power-tools/bosch-power-tools-homepage-desktop.png" description ="Homepage Design on desktop viewport." %}
 
+{% include project-markdown-video.html url="/assets/videos/enbw/enbw-produktfinder.mp4" %}
+
 {% include project-markdown-image.html source="/assets/images/bosch-professional-power-tools/bosch-power-tools-homepage-mobile.png" description ="Homepage design on mobile devices." %}
 
 {% include project-markdown-image.html source="/assets/images/bosch-professional-power-tools/bosch-power-tools-landingpage-desktop.png" description ="Landingpage design on desktop viewport." %}
+
+{% include project-markdown-video.html url="/assets/videos/enbw/enbw-blueprint.mp4" %}
+
+{% include project-markdown-video.html url="/assets/videos/enbw/enbw-hotspot-zoom.mp4" %}
 
 {% include project-markdown-image.html source="/assets/images/bosch-professional-power-tools/bosch-power-tools-landingpage-mobile.png" description ="Landingpage design on mobile viewport." %}
 
