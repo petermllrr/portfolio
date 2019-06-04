@@ -1,5 +1,6 @@
 ---
 layout: home
+id: home # Will be assigned to body tag as an ID. Used to color the header black.
 
 # Hero
 hero:

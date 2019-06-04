@@ -48,6 +48,13 @@ footer:
       url: https://dribbble.com/petermueller
       icon: icon-dribbble
 
+# Navigation links
+navigation:
+    - title: Home
+      url: /
+    - title: Contact
+      url: #
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
