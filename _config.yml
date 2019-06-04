@@ -38,7 +38,7 @@ footer:
     - text: Email
       url: mailto:hello@petermueller.io
       icon: icon-mail-inline
-    - text: Full CV
+    - text: Resume
       url: \#
       icon: icon-cv-inline
     - text: LinkedIn
@@ -52,6 +52,8 @@ footer:
 navigation:
     - title: Home
       url: /
+    - title: Resume
+      url: /assets/downloads/cv-peter-mueller.pdf
     - title: Contact
       url: mailto:hello@petermueller.io
 

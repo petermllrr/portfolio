@@ -14,8 +14,8 @@ hero:
         x3: /assets/images/intro_profile_pic@3x.png
         description: Peter Müller
     links:
-        - text: View my CV
-          url: \#
+        - text: View my resume
+          url: /assets/downloads/cv-peter-mueller.pdf
           icon: icon-cv
         - text: Write me a mail
           url: mailto:hello@petermueller.io
