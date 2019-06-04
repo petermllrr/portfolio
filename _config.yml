@@ -53,7 +53,7 @@ navigation:
     - title: Home
       url: /
     - title: Contact
-      url: #
+      url: mailto:hello@petermueller.io
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
