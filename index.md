@@ -15,7 +15,7 @@ hero:
         description: Peter Müller
     links:
         - text: View my resume
-          url: /assets/downloads/cv-peter-mueller.pdf
+          url: /assets/downloads/resume-peter-mueller.pdf
           icon: icon-cv
         - text: Write me a mail
           url: mailto:hello@petermueller.io
