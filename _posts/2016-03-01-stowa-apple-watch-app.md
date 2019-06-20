@@ -17,4 +17,18 @@ role: Interface design, animation design, prototyping
 client: STOWA
 ---
 
-![Screenshot of STOWA Apple Watch app.](/assets/images/stowa-apple-watch-app/stowa-intro.png)
+{% include project-markdown-image.html source="/assets/images/stowa-apple-watch-app/stowa-intro.png" description ="STOWA app audio playback interface." %}
+
+{% include project-markdown-image.html source="/assets/images/stowa-apple-watch-app/stowa_screens_1_login.png" description ="Intro and welcome screens." %}
+
+{% include project-markdown-image.html source="/assets/images/stowa-apple-watch-app/stowa_screens_2_media.png" description ="Media playback screens." %}
+
+{% include project-markdown-image.html source="/assets/images/stowa-apple-watch-app/stowa_screens_3_hints.png" description ="Usage hints." %}
+
+{% include project-markdown-image.html source="/assets/images/stowa-apple-watch-app/stowa_screens_5_facts.png" description ="Infographics" %}
+
+{% include project-markdown-image.html source="/assets/images/stowa-apple-watch-app/stowa_screens_4_awards.png" description ="Awards screen." %}
+
+{% include project-markdown-image.html source="/assets/images/stowa-apple-watch-app/stowa_screens_6_history.png" description ="History screen." %}
+
+{% include project-markdown-image.html source="/assets/images/stowa-apple-watch-app/stowa_screens_landingpage.png" description ="Landingpage design for downloading the STOWA app." %}
