@@ -17,4 +17,6 @@ role: Prototyping, interface design
 client: hessnatur
 ---
 
-![Screenshot of hessnatur Boulevard of Green website.](/assets/images/hessnatur/hessnatur-intro.png)
+{% include project-markdown-video.html url="/assets/videos/hessnatur/hessnatur-boulevard-of-green.mp4" %}
+
+{% include project-markdown-image.html source="/assets/images/hessnatur/hessnatur.jpg" description ="hessnatur Boulevard of Green website design." %}
