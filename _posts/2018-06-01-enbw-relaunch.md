@@ -3,6 +3,8 @@ layout: project
 categories: projects
 
 title: EnBW Relaunch
+description: Agile relaunch of EnBW's consumer portal. # Meta description
+image: /assets/images/enbw-relaunch/enbw-relaunch-cover@2x.jpg # Open Graph sharing image
 
 # Homepage teaser
 cover-image:

@@ -3,6 +3,8 @@ layout: project
 categories: projects
 
 title: hessnatur Fashionweek
+description: A playful landingpage for the Boulevard of Green. # Meta description
+image: /assets/images/hessnatur/hessnatur-sharing.png # Open Graph sharing image
 
 # Homepage teaser
 cover-image:

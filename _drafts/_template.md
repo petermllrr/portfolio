@@ -1,7 +1,9 @@
 ---
 layout: project
 
-title: 
+title: # Site title
+description: # Meta description
+image: # Open Graph sharing image
 permalink: 
 
 # Homepage teaser
