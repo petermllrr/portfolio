@@ -19,4 +19,16 @@ role: Interface design, prototyping
 client: Merceds-Benz Bank
 ---
 
-![Screenshot of Mercedes-Benz Bank financing calculator.](/assets/images/mercedes-benz-bank-financing-calculator/mbb-intro.jpg)
+{% include project-markdown-image.html source="/assets/images/mercedes-benz-bank-financing-calculator/mercedes-benz-ratenrechner-1.jpg" description ="Start screen of the app" %}
+
+{% include project-markdown-video.html url="/assets/videos/mercedes-benz-bank-financing-calculator/mbb-ui-animation.mp4" %}
+
+{% include project-markdown-image.html source="/assets/images/mercedes-benz-bank-financing-calculator/mercedes-benz-ratenrechner-2.jpg" description ="Version for Mercedes-Benz vans" %}
+
+{% include project-markdown-image.html source="/assets/images/mercedes-benz-bank-financing-calculator/mercedes-benz-ratenrechner-3.jpg" description ="Mobile designs" %}
+
+{% include project-markdown-image.html source="/assets/images/mercedes-benz-bank-financing-calculator/mercedes-benz-ratenrechner-4.jpg" description ="Car and budget selection" %}
+
+{% include project-markdown-image.html source="/assets/images/mercedes-benz-bank-financing-calculator/mercedes-benz-ratenrechner-5.jpg" description ="Financing configurator" %}
+
+{% include project-markdown-image.html source="/assets/images/mercedes-benz-bank-financing-calculator/mercedes-benz-ratenrechner-6.jpg" description ="Overview and comparison view" %}
