@@ -4,7 +4,7 @@ categories: projects
 
 title: Mercedes-Benz Financing Calculator
 description: An interactive financing calculator for Mercedes-Benz. # Meta description
-image: /assets/images/mercedes-benz-bank-financing-calculator/mbb-intro.jpg # Open Graph sharing image
+image: /assets/images/mercedes-benz-bank-financing-calculator/mercedes-benz-ratenrechner-1.jpg # Open Graph sharing image
 
 # Homepage teaser
 cover-image:
