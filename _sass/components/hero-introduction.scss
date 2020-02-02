@@ -41,16 +41,17 @@
 .hero-introduction__text {
     @include text-style(body);
     @include text-style(white);
+    line-height: $text-bodycopy-line-height * 1.1;
 }
 
 .hero-introduction__text a {
-    box-shadow: 0 4px 0 -2px $color-accent-on-dark;
     color: inherit;
-
+    box-shadow: 0 3px 0 -2px $color-white;
+    
     &:hover {
-        box-shadow: 0 4px 0 -2px $color-accent-on-dark;
+        box-shadow: 0 3px 0 -2px $color-accent-on-dark;
         color: $color-accent-on-dark;
-      }
+    }
 }
 
 /*
@@ -76,10 +77,11 @@
 }
 
 .hero-introduction__link-text {
-    box-shadow: 0 4px 0 -2px $color-accent-on-dark;
+    box-shadow: 0 3px 0 -2px $color-white;
 }
 
 .hero-introduction__link:hover .hero-introduction__link-text {
+    box-shadow: 0 3px 0 -2px $color-accent-on-dark;
     color: $color-accent-on-dark;
 }
 
