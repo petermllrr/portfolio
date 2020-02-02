@@ -17,7 +17,7 @@ RUN gem install jekyll bundler:1.17.2
 # See docker run command in readme file.
 WORKDIR /site
 COPY ./Gemfile .
-RUN bundle update
+COPY ./Gemfile.lock .
 RUN bundle install
 
 # Copy the remaining files in the container

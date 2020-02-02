@@ -7,9 +7,9 @@ image: /assets/images/general/sharing-image.jpg # Open Graph sharing image
 # Hero
 hero:
     introduction:
-        heading: Hi, I'm Peter
+        heading: Hi, I'm Peter.
         text: >-
-          I’m a senior visual designer based in Munich, Germany. Currently I am part of the design team at <a href="https://www.publicissapient.com/">Publicis Sapient</a>, previously <a href="https://www.jvm.com/en/">Jung von Matt</a> and <a href="https://scanbot.io">Scanbot</a>.
+          I'm an interaction designer based in Munich, Germany and part of the <a href="https://twitter.com/ChromiumDev">Chrome DevTools</a> team at Google. Previously I worked at <a href="https://www.publicissapient.com/">Publicis Sapient</a>, <a href="https://www.jvm.com/en/">Jung von Matt</a> and <a href="https://scanbot.io">Scanbot</a>.
     image:
         x1: /assets/images/intro_profile_pic.png
         x2: /assets/images/intro_profile_pic@2x.png
