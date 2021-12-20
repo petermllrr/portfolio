@@ -4,8 +4,8 @@ id: home # Will be assigned to body tag as an ID. Used to color the header black
 
 title: Peter Müller's Portfolio
 description: >-
-  Peter is a UX designer working Chrome DevTools at Google. Read case studies
-  about his projects, see his CV or find contact information.
+  Peter is a UX designer working on Chrome DevTools at Google. On this website
+  you can find case studies of his work, his CV and further contact information.
 
 image: /assets/images/general/sharing-image.jpg # Open Graph sharing image
 
