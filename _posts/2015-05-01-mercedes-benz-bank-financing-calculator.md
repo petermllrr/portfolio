@@ -2,7 +2,7 @@
 layout: project
 categories: projects
 
-title: Mercedes-Benz Financing Calculator
+title: Mercedes-Benz Financing Calculator | Peter Müller's Portfolio
 description: An interactive financing calculator for Mercedes-Benz. # Meta description
 image: /assets/images/mercedes-benz-bank-financing-calculator/mercedes-benz-ratenrechner-1.jpg # Open Graph sharing image
 

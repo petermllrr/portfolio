@@ -2,7 +2,7 @@
 layout: project
 categories: projects
 
-title: STOWA Apple Watch App
+title: STOWA Apple Watch App | Peter Müller's Portfolio
 description: An analog classic goes digital. # Meta description
 image: /assets/images/stowa-apple-watch-app/stowa-intro.png # Open Graph sharing image
 

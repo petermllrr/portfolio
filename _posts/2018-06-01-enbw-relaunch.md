@@ -2,7 +2,7 @@
 layout: project
 categories: projects
 
-title: EnBW Relaunch
+title: EnBW Relaunch | Peter Müller's Portfolio
 description: Agile relaunch of EnBW's consumer portal. # Meta description
 image: /assets/images/enbw-relaunch/enbw-relaunch-cover@2x.jpg # Open Graph sharing image
 
