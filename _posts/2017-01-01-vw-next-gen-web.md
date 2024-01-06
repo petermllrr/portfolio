@@ -2,7 +2,7 @@
 layout: project
 categories: projects
 
-title: VW Next Generation Website | Peter Müller's Portfolio
+title: VW Next Generation Website
 description: Digital showroom update for Volkswagen. # Meta description
 image: /assets/images/vw-next-gen-web/volkswagen-next-gen-web-intro.png # Open Graph sharing image
 

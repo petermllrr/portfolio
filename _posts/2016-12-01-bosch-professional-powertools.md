@@ -2,7 +2,7 @@
 layout: project
 categories: projects
 
-title: Bosch Professional Power Tools | Peter Müller's Portfolio
+title: Bosch Professional Power Tools
 description: An onlineshop for professional craftsmen and construction workers. # Meta description
 image: /assets/images/bosch-professional-power-tools/bosch_power_tools_sharing.png # Open Graph sharing image
 

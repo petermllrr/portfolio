@@ -2,7 +2,7 @@
 layout: project
 categories: projects
 
-title: Wüstenrot and Württembergische | Peter Müller's Portfolio
+title: Wüstenrot and Württembergische
 description: A digital design system for W&W's website. # Meta description
 image: /assets/images/wuestenrot-und-wuerttembergische/wuestenrot_and_wuerttembergische-intro.png # Open Graph sharing image
 

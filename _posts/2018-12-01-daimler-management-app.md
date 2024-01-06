@@ -2,7 +2,7 @@
 layout: project
 categories: projects
 
-title: Daimler Management App | Peter Müller's Portfolio
+title: Daimler Management App
 description: An internal management app for Daimler. # Meta description
 image: /assets/images/daimler-management-app/daimler_management_app_intro.png # Open Graph sharing image
 
