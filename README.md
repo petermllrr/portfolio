@@ -7,7 +7,7 @@ My portfolio on GitHub Pages.
 Follow the [official Jekyll documentation](https://jekyllrb.com/docs/installation/)
 for the installation procedure. 
 
-**Note 1**: Homebrew's gem path is different
+**Note 1**: On macOS, Homebrew's gem path is different
 than mentioned in the documentation:
 
 ```shell
@@ -26,12 +26,27 @@ defines that an older version of bundler that was used in this repo previously.
 The easiest way to resolve this is to delete the `gemfile.lock` and run
 `bundle install` again to install the latest versions of all gems.
 
+**Note 4**: On Ubuntu, you might need to remove previous Ruby installations via
+`sudo apt-get remove "ruby*"` (note the asterisk).
+
 ## Keeping gems up to date
 
 Regulary check if a new GitHub pages gem is available at
 [GitHub pages: Dependency versions](https://pages.github.com/versions/) and
-update the line in the `_config.yml` accordingly. Run `bundle install` to
+update the line in the `Gemfile` accordingly. Run `bundle install` to
 install the new version.
+
+After installing Ruby and Jekyll, install all dependencies:
+
+```sh
+bundle install
+```
+
+Then serve the website:
+
+```sh
+bundle exec jekyll serve
+```
 
 ## Useful commands
 
